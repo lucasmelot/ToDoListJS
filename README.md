@@ -26,12 +26,9 @@ O objetivo deste projeto é aplicar conceitos fundamentais do desenvolvimento we
 
 ```
 📦 ToDoListJS
- ┣ 📂 assets
- ┃ ┗ 📂 images
  ┣ 📜 index.html
- ┣ 📜 style.css
- ┣ 📜 script.js
- ┗ 📜 README.md
+ ┣ 📜 README.md
+ ┗ 📜 script.js
 ```
 
 ---
