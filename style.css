@@ -1,0 +1,105 @@
+/* Reset básico e tipografia inspirada no Notion */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #37352f; /* Cor principal do texto no Notion */
+}
+
+body {
+    background-color: #ffffff; /* Fundo totalmente limpo */
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+/* Container do aplicativo */
+#app {
+    width: 100%;
+    max-width: 540px;
+    padding: 0 20px;
+}
+
+/* Campo de entrada de texto */
+#inp {
+    width: 78%;
+    padding: 8px 12px;
+    border: 1px solid rgba(15, 15, 15, 0.1);
+    border-radius: 4px;
+    font-size: 15px;
+    background: transparent;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 1px 2px;
+    transition: background 0.2s ease;
+}
+
+#inp:focus {
+    outline: none;
+    background: rgba(15, 15, 15, 0.02);
+    border-color: rgba(15, 15, 15, 0.2);
+}
+
+#inp::placeholder {
+    color: rgba(55, 53, 47, 0.3);
+}
+
+/* Botão de registrar */
+#btn {
+    width: 20%;
+    padding: 8px 12px;
+    border: 1px solid rgba(15, 15, 15, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 1px 2px;
+    transition: background 0.2s ease;
+}
+
+#btn:hover {
+    background-color: #f1f1ef; /* Cinza de hover padrão do Notion */
+}
+
+#btn:active {
+    background-color: #e9e9e6;
+}
+
+/* Lista de Tarefas */
+ul {
+    margin-top: 28px;
+    list-style: none;
+}
+
+/* Cada linha de tarefa */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: background 0.15s ease;
+}
+
+/* Efeito ao passar o mouse na linha da tarefa */
+li:hover {
+    background-color: rgba(55, 53, 47, 0.04);
+}
+
+/* Link de remoção */
+li a {
+    font-size: 13px;
+    color: rgba(55, 53, 47, 0.4);
+    text-decoration: none;
+    padding: 2px 6px;
+    border-radius: 3px;
+    transition: all 0.15s ease;
+}
+
+/* Efeito hover no botão 'remover' usando o tom vermelho do Notion */
+li a:hover {
+    background-color: rgba(235, 87, 87, 0.1); 
+    color: #eb5757; 
+}
